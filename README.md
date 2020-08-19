@@ -72,3 +72,13 @@ I'd be glad to receive patches,
 comments and your considered criticism.
 
 _Have fun with alarm-clock!_
+
+## Notes by Jin
+
+The magic is done by emacs built-in
+[timer](https://www.gnu.org/software/emacs/manual/html_node/elisp/Timers.html).
+Inspect the functions `run-at-time` and `cancel-timer` in the source code for
+more information. The former schedules another function, `alarm-clock--notify`,
+to be run at a given time in the future. While `alarm-clock--notify` is
+launched, with the right values, the sound and notification will be launched
+right away.
