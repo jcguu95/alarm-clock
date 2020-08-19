@@ -8,7 +8,7 @@ An alarm clock for Emacs
 ## Requirements
 
 -   Emacs 24 or higher
--   [mpg123](http://mpg123.org) (gnu/linux)
+-   [mpv](http://mpv.io) (gnu/linux)
 -   [terminal-notifier](https://github.com/julienXX/terminal-notifier) (macOS)
 -   [notify-send](https://manpages.debian.org/stretch/libnotify-bin/notify-send.1.en.html) (gnu/linux)
 
@@ -27,13 +27,13 @@ An alarm clock for Emacs
 
 ### `alarm-clock-set`
 
-Set an alarm clock with the time following tips.  
-TIME can be "6"(6 seconds), "11 minutes", "10 hours", "11:40pm", etc.  
+Set an alarm clock with the time following tips.
+TIME can be "6"(6 seconds), "11 minutes", "10 hours", "11:40pm", etc.
 MESSAGE will be shown when notifying at setting time.
 
 ### `alarm-clock-list-view`
 
-Display the alarm clock list.  
+Display the alarm clock list.
 Use `a` to set a new alarm clock, `C-k` to delete current alarm clock.
 
 ### `alarm-clock-save`
@@ -48,7 +48,7 @@ Restore alarm-clock from cache file.
 
 ### Enable autosave-and-restore feature
 
--   Change cache file path by setting the variable `alarm-clock-cache-file` to any file path you like.  
+-   Change cache file path by setting the variable `alarm-clock-cache-file` to any file path you like.
 
 -   Add these lines to your .emacs file:
 
